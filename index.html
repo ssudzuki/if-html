@@ -99,89 +99,94 @@
       </tr>
     </table>
     <h2>My first form</h2>
-    <form action="/home" method="get">
-      <fieldset>
-        <legend>My first form</legend>
-        <p>
-          <label for="name">Name</label> <br />
-          <input
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Your name"
-            required
-          />
-        </p>
-        <p>
-          <label for="email">Email</label> <br />
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Your email"
-            required
-          />
-        </p>
-        <p>
-          <label for="password">Password</label> <br />
-          <input
-            id="password"
-            type="password"
-            name="password"
-            placeholder="Your password"
-            required
-          />
-        </p>
-        <p>
-          <label for="programming">Your programming level</label> <br />
-          <input
-            id="programming"
-            type="range"
-            name="programming"
-            min="0"
-            max="10"
-            value="5"
-          />
-        </p>
-        <p>
-          What does HTML stand for? <br />
-          <input id="question-1" type="checkbox" name="question" value="1" />
-          <label for="question-1">Hyperlinks and Text Markup Language</label>
-          <br />
-          <input id="question-2" type="checkbox" name="question" value="2" />
-          <label for="question-2">Home Tool Markup Language</label> <br />
-          <input id="question-3" type="checkbox" name="question" value="3" />
-          <label for="question-3">Hyper Text Markup Language</label> <br />
-        </p>
-        <p>
-          What does HTTP stand for? <br />
-          <input id="answer-1" type="radio" name="answer" value="1" />
-          <label for="answer-1">Hyper Text Translate Protocol</label> <br />
-          <input id="answer-2" type="radio" name="answer" value="2" />
-          <label for="answer-2">Hyper Text Transmission Protocol</label> <br />
-          <input id="answer-3" type="radio" name="answer" value="3" />
-          <label for="answer-3">Hyper Text Transfer Protocol</label> <br />
-        </p>
-        <p>
-          <label for="comment">Comment</label> <br />
-          <textarea
-            id="comment"
-            maxlength="500"
-            placeholder="Comment"
-          ></textarea>
-        </p>
-        <p>
-          <label for="q/a">What does HTML stand for?</label> <br />
-          <select name="q/a" id="q/a">
-            <option disabled selected>Your answer</option>
-            <option>Hyperlinks and Text Markup Language</option>
-            <option>Home Tool Markup Language</option>
-            <option>Hyper Text Markup Language</option>
-          </select>
-        </p>
-        <button>Send</button>
-        <button type="reset">Reset</button>
-      </fieldset>
-    </form>
+    <div>
+      <form action="/home" method="get">
+        <fieldset>
+          <legend>My first form</legend>
+          <div>
+            <label for="name">Name</label> <br />
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email</label> <br />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+          </div>
+          <div>
+            <label for="password">Password</label> <br />
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Your password"
+              required
+            />
+          </div>
+          <div>
+            <label for="programming">Your programming level</label> <br />
+            <input
+              id="programming"
+              type="range"
+              name="programming"
+              min="0"
+              max="10"
+              value="5"
+            />
+          </div>
+          <div>
+            <p>What does HTML stand for?</p>
+            <br />
+            <input id="question-1" type="checkbox" name="question" value="1" />
+            <label for="question-1">Hyperlinks and Text Markup Language</label>
+            <br />
+            <input id="question-2" type="checkbox" name="question" value="2" />
+            <label for="question-2">Home Tool Markup Language</label> <br />
+            <input id="question-3" type="checkbox" name="question" value="3" />
+            <label for="question-3">Hyper Text Markup Language</label> <br />
+          </div>
+          <div>
+            <p>What does HTTP stand for?</p>
+            <br />
+            <input id="answer-1" type="radio" name="answer" value="1" />
+            <label for="answer-1">Hyper Text Translate Protocol</label> <br />
+            <input id="answer-2" type="radio" name="answer" value="2" />
+            <label for="answer-2">Hyper Text Transmission Protocol</label>
+            <br />
+            <input id="answer-3" type="radio" name="answer" value="3" />
+            <label for="answer-3">Hyper Text Transfer Protocol</label> <br />
+          </div>
+          <div>
+            <label for="comment">Comment</label> <br />
+            <textarea
+              id="comment"
+              maxlength="500"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+          <div>
+            <label for="q/a">What does HTML stand for?</label> <br />
+            <select name="q/a" id="q/a">
+              <option disabled selected>Your answer</option>
+              <option>Hyperlinks and Text Markup Language</option>
+              <option>Home Tool Markup Language</option>
+              <option>Hyper Text Markup Language</option>
+            </select>
+          </div>
+          <button>Send</button>
+          <button type="reset">Reset</button>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
