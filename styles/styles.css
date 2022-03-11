@@ -1,6 +1,16 @@
+@import url("./fonts.css");
+
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.what-do-we-offer {
+  margin-bottom: 120px;
 }
 
 .heading_line {
@@ -10,6 +20,8 @@
 }
 
 .heading {
+  font-size: 40px;
+  font-weight: bold;
   margin-top: 120px;
   text-align: center;
   color: #383838;
@@ -41,4 +53,48 @@
   margin-bottom: 50px;
   width: 100px;
   height: 100px;
+}
+
+.text {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.footer {
+  width: 100%;
+  height: 630px;
+  background-color: #10367c;
+  color: #ffff;
+  padding: 120px 104px;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 104px;
+}
+
+.column-title {
+  /*to do font-weight 500*/
+  font-weight: 600;
+}
+
+.column-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-list span,
+.column-title {
+  padding-bottom: 24px;
+}
+
+#copyright {
+  margin-top: 64px;
 }
