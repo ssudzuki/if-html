@@ -57,12 +57,12 @@
         <svg class="logo">
           <use href="#logo" />
         </svg>
-        <div id="header-right-elements">
-          <div id="nav-header">
+        <div class="header-right-elements">
+          <div class="nav-header">
             <span><a class="header-link" href="#">Stays</a></span>
             <span><a class="header-link" href="#">Attractions</a></span>
           </div>
-          <div id="icons-control">
+          <div class="icons-control">
             <svg class="theme-switcher">
               <use href="#night-icon" />
             </svg>
@@ -83,7 +83,7 @@
           </div>
           <div class="dates-input-label">Check-in — Check-out</div>
         </div>
-        <div id="hero-booking-grid">
+        <div class="hero-booking-grid">
           <div>
             <input
               class="hero-booking-input"
@@ -93,7 +93,7 @@
           </div>
           <div>
             <input
-              class="hero-booking-input yellow-border"
+              class="hero-booking-input"
               type="text"
               placeholder="Tue 15 Sept — Sat 19 Sept"
             />
@@ -109,7 +109,7 @@
             <button class="header-button">Search</button>
           </div>
         </div>
-        <div id="badges-flex-container">
+        <div class="badges-flex-container">
           <div class="badges">
             <a class="google-apple-badge" href="#"
               ><img
@@ -137,7 +137,7 @@
         <div class="icon">
           <img
             class="img_icon"
-            src="./images/headset_mic_outlined%20.png"
+            src="./images/headset_mic_outlined.svg"
             alt="headset_mic_outlined"
           />
           <span class="text">Support 27/7</span>
@@ -145,15 +145,15 @@
         <div class="icon">
           <img
             class="img_icon"
-            src="./images/forum_outlined%20.png"
+            src="./images/forum_outlined.svg"
             alt="forum_outlined"
           />
           <span class="text">Communicate directly</span>
         </div>
         <div class="icon">
           <img
-            class="img_icon"
-            src="./images/devices_outlined%20.png"
+            class="img_icon devices"
+            src="./images/devices_outlined.svg"
             alt="devices_outlined"
           />
           <span class="text">Book online</span>
@@ -161,7 +161,7 @@
         <div class="icon">
           <img
             class="img_icon"
-            src="./images/thumb_up_alt_outlined%20.png"
+            src="./images/thumb_up_alt_outlined.svg"
             alt="thumb_up_alt_outlined"
           />
           <span class="text">Real guest reviews</span>
@@ -169,28 +169,53 @@
       </div>
     </div>
     <footer class="footer">
-      <div class="container">
-        <div class="column">
-          <span class="column-title">About</span>
-          <div class="column-list">
-            <span>How Triphouse works</span><span>Careers</span
-            ><span>Privacy</span><span>Terms</span>
-          </div>
+      <ul class="column">
+        <div class="container">
+          <li>
+            <div class="column">
+              <span class="column-title"
+                ><a class="footer-link" href="#">About</a></span
+              >
+              <div class="column-list">
+                <span
+                  ><a class="footer-link" href="#">How Triphouse works</a></span
+                ><span><a class="footer-link" href="#">Careers</a></span
+                ><span><a class="footer-link" href="#">Privacy</a></span
+                ><span><a class="footer-link" href="#">Terms</a></span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="column">
+              <span class="column-title"
+                ><a class="footer-link" href="#">Property types</a></span
+              >
+              <div class="column-list">
+                <span><a class="footer-link" href="#">Guest houses</a></span
+                ><span><a class="footer-link" href="#">Hotels</a></span
+                ><span><a class="footer-link" href="#">Apartments</a></span
+                ><span><a class="footer-link" href="#">Villas</a></span
+                ><span><a class="footer-link" href="#">Holiday homes</a></span
+                ><span><a class="footer-link" href="#">Hostels</a></span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="column">
+              <span class="column-title"
+                ><a class="footer-link" href="#">Support</a></span
+              >
+              <div class="column-list">
+                <span
+                  ><a class="footer-link" href="#"
+                    >Contact Customer Service</a
+                  ></span
+                ><span><a class="footer-link" href="#">FAQ</a></span>
+              </div>
+            </div>
+          </li>
         </div>
-        <div class="column">
-          <span class="column-title">Property types</span>
-          <div class="column-list">
-            <span>Guest houses</span><span>Hotels</span><span>Apartments</span
-            ><span>Villas</span><span>Holiday homes</span><span>Hostels</span>
-          </div>
-        </div>
-        <div class="column">
-          <span class="column-title">Support</span>
-          <div class="column-list">
-            <span>Contact Customer Service</span><span>FAQ</span>
-          </div>
-        </div>
-      </div>
+      </ul>
       <div id="copyright">&copy; 2020 Triphouse, Inc. All rights reserved</div>
     </footer>
   </body>
