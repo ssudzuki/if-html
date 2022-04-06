@@ -18,7 +18,7 @@ body {
 .web-site-layout {
   position: relative;
   width: 100%;
-  padding: 0px 104px;
+  padding: 0 104px;
 }
 
 .hero-background {
@@ -42,7 +42,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 51px 0px;
+  padding: 51px 0;
 }
 
 .logo {
@@ -94,7 +94,7 @@ header {
   fill: #f5bd41;
 }
 
-p {
+h1 {
   color: #ffff;
   font-size: 50px;
   font-weight: 600;
@@ -129,7 +129,8 @@ p {
   padding: 22px 24px;
 }
 
-.hero-booking-input:focus, .hero-booking-input:hover {
+.hero-booking-input:focus,
+.hero-booking-input:hover {
   outline: none;
   border: 3px solid #f5bd41;
 }
@@ -178,7 +179,7 @@ p {
 }
 
 .google-play {
-  width: 145px;
+  width: 130px;
   transform: scale(1.05);
 }
 
@@ -232,7 +233,6 @@ p {
   height: 100px;
 }
 
-
 .text {
   font-size: 24px;
   font-weight: normal;
@@ -269,12 +269,12 @@ p {
   flex-direction: column;
 }
 
-.footer-link{
+.footer-link {
   text-decoration: none;
   color: #ffff;
 }
 
-.column-list span,
+.column-list li,
 .column-title {
   padding-bottom: 24px;
 }
