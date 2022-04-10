@@ -253,10 +253,9 @@ h1 {
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
   margin-right: 104px;
   list-style: none;
+  padding: 0px;
 }
 
 .column-title {
