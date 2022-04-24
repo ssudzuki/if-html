@@ -1,13 +1,56 @@
 @import url("./fonts.css");
 
+:root {
+  font-size: 1.1vw;
+  --layout-border-width: 6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@media(max-width:1440px){
+  :root{
+    font-size: 16px;
+  }
+}
+
+@media(max-width:960px){
+  :root{
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    font-size: 4.2vw;
+  }
+}
+
+
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
+body>*{
+  padding: 0 6rem;
 }
+
+input{
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .sprites {
   position: absolute;
   visibility: hidden;
@@ -15,22 +58,11 @@ body {
   height: 0;
 }
 
-.web-site-layout {
+#hero-section {
   position: relative;
-  width: 100%;
-  padding: 0 104px;
-}
-
-.hero-background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   background-image: url("../images/top_section_background.png");
-  background-size: cover;
   background-position: 0 -200px;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  background-size: cover;
 }
 
 @media (max-width: 1440px) {
@@ -42,13 +74,13 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 51px 0;
+  padding: 3rem 0;
 }
 
 .logo {
   fill: #3077c6;
-  width: 205px;
-  height: 40px;
+  width: 13rem;
+  height: 2.5rem;
 }
 
 .header-right-elements {
@@ -56,59 +88,76 @@ header {
   align-items: center;
 }
 
-nav span:not(:last-child),
+nav > ul {
+  display: flex;
+}
+
+nav li:not(:last-child),
 .icons-control svg:not(:last-child) {
-  margin-right: 24px;
+  margin-right: 1.5em;
 }
 
 .header-link {
   color: #ffff;
   text-decoration: none;
   font-size: 1.5em;
+  position: relative;
 }
 
-.header-link:hover {
+.header-link:after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -40%;
+}
+
+.header-link:hover:after {
+  transition-duration: 1s;
   border-bottom: 4px solid #f5bd41;
-  padding-bottom: 12px;
 }
 
 .icons-control {
   display: flex;
   align-items: center;
-  margin-left: 48px;
+  margin-left: 3rem;
 }
 
 .theme-switcher {
-  fill: #ffff;
-  width: 30px;
-  height: 30px;
+  width: 2em;
+  height: 2em;
 }
 
 .account {
-  width: 40px;
-  height: 40px;
+  width: 2.33em;
+  height: 2.33em;
+}
+
+.btn-icon {
   fill: #ffff;
+  cursor: pointer;
 }
 
 .account:hover {
   fill: #f5bd41;
 }
 
-h1 {
+#hero-section h1 {
+  margin-top: 12.5rem;
   color: #ffff;
   font-size: 3em;
-  font-weight: 600;
-  display: flex;
-  margin-top: 200px;
+}
+
+#booking-search-form {
+  font-size:1.2em;
 }
 
 .booking-input-labels {
   color: #ffff;
-  font-size: 1.2em;
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
-  margin-bottom: 24px;
+  margin: 6.25rem 0 1.7rem;
 }
 
 .hotel-name-input-label {
@@ -121,18 +170,16 @@ h1 {
 }
 
 .hero-booking-input {
-  font-size: 1.2em;
-  border-radius: 8px;
-  border: 3px solid #f3f3f4;
-  width: 100%;
-  height: 64px;
-  padding: 22px 24px;
+  border-radius: 0.4em;
+  border: 0.15em solid #f3f3f4;
+  height: 3.15em;
+  padding: 1.5em;
 }
 
 .hero-booking-input:focus,
 .hero-booking-input:hover {
   outline: none;
-  border: 3px solid #f5bd41;
+  border: 0.15em solid #f5bd41;
 }
 
 .hero-booking-grid > *:nth-child(1) {
@@ -146,7 +193,7 @@ h1 {
 
 .hero-booking-grid > *:nth-child(3) {
   position: relative;
-  right: 12px;
+  right: .75em;
 }
 
 .hero-booking-grid > *:nth-child(4) {
@@ -154,152 +201,171 @@ h1 {
   right: 25px;
 }
 
-.header-button {
-  width: 192px;
-  height: 65px;
-  font-size: 1.5em;
+.primary-button {
+  font-size: 1.3em;
+  width: 8em;
+  height: 2.6em;
   color: #ffff;
   background-color: #3077c6;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
-.badges-flex-container {
+.badges-container {
   display: flex;
   justify-content: center;
 }
 
 .badges {
-  margin: 120px 120px;
+  display:flex;
+  margin: 7.5rem;
 }
 
-.google-apple-badge {
-  margin-right: 24px;
-  text-decoration: none;
-  height: 40px;
+.badges img {
+  height: 2.5rem;
+  width: auto
 }
 
-.google-play {
-  width: 130px;
-  transform: scale(1.05);
+.appsstore-badge {
+  display:block;
 }
 
-.apple-store {
-  width: 120px;
+.appsstore-badge:not(:last-child) {
+  margin-right: 1.5rem;
 }
 
-.what-do-we-offer {
+#advantages-section {
   margin-bottom: 120px;
 }
 
-.heading_line {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
-.heading {
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-top: 120px;
-  text-align: center;
+#advantages-section h2 {
+  margin-top: 7.5rem;
   color: #383838;
 }
 
-.line {
-  margin-top: 20px;
-  width: 100px;
-  height: 4px;
-  border: 0;
+.underlined{
+  position:relative;
+}
+.underlined:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -0.5em;
+  transform: translateX(-50%);
+  width: 2.5em;
+  height: 0.125em;
   background-color: #f5bd41;
 }
 
-.images {
-  margin-top: 4.5em;
+.advantages {
+  margin-top: 6.5rem;
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
 
-.icon {
+.advantage {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.col-3 {
-  width: 25%;
+.advantage-img-icon {
+  margin-bottom: 50px;
+  height: 5em;
+  width:auto;
 }
 
-.img_icon {
-  margin-bottom: 2.5em;
-  height: 4.5em;
-}
 
-.text {
-  font-size: 1.8em;
-  font-weight: normal;
+.advantage-name {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 960px) {
-  .heading {
+  #advantages-section h2 {
     font-size: 2.5em;
     margin-top: 24px;
   }
-
-  .images {
+.advantages img{
+  height: 5em;
+  width:auto;
+}
+  .advantages{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .line {
+  .underlined:after {
     display: none;
   }
 
-  .images {
+  .advantages {
     margin-top: 35px;
   }
 
-  .icon {
+  .advantage {
     margin-top: 34px;
   }
 }
 
-.homes-guests-loves {
+#hotels-examples {
   background-color: #eaf0f9;
   width: 100%;
-  height: 828px;
+  height: 52rem;
 }
 
-.title-of-the-homes-block {
+#hotels-examples h2 {
   font-size: 2.5em;
   color: #383838;
   font-weight: 600;
   text-align: center;
-  padding: 120px 0 100px 0;
+  padding: 7.5rem 0 6.5rem 0;
 }
 
-.hotels-example-panel {
-  font-size: 1.6em;
-  margin: 0 6.5rem;
+#hotels-example-panel {
+  font-size: 1.5em;
+
+}
+
+#hotels-imgs-names img {
+  width: 100%;
+}
+
+#hotels-imgs-names,
+#hotels-locations {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
-.hotels-name {
+#hotels-imgs-names > *,
+#hotels-locations > * {
+  width: 25%;
+  padding-right: 1.5rem;
+}
+
+.hotel-img-name>p{
   color: #3077c6;
-  display: block;
-  margin: 1.5rem 0;
+  margin-top: 24px;
 }
 
-.hotels-location {
-  color: #bfbfbf;
+.s-show,
+.xs-show {
+  display: none;
 }
 
-.carousel-container {
+.rel-container {
   position: relative;
+}
+
+.hotel-location{
+  color: #bfbfbf;
+  margin-top: 24px;
 }
 
 .carousel-arrow {
@@ -311,10 +377,15 @@ h1 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.hotels-example-panel .carousel-arrow {
+#hotels-example-panel .carousel-arrow {
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.carousel-container {
+  position: relative;
 }
 
 .carousel-arrow:before {
@@ -339,23 +410,45 @@ button.carousel-arrow:active {
   border: 1px solid;
 }
 
-@media (max-width: 900px) {
-  .col-3 {
+@media(max-width:960px){
+  .s-hide{
+    display: none;
+  }
+  .s-show{
+    display: block;
+  }
+  #hotels-imgs-names>*,
+  #hotels-locations>*{
+    width:50%;
+  }
+}
+
+@media(max-width: 500px) {
+
+  #hotels-example-panel{
+    font-size: 2em;
+  }
+
+  #hotels-examples h2{
+    padding: 40px 0 30px 0;
+  }
+
+  .xs-hide {
+    display: none;
+  }
+
+  .xs-show {
+    display: block;
+  }
+
+  #hotels-imgs-names > *,
+  #hotels-locations > * {
     width: 100%;
   }
 
-  .hotel-card-responsive {
-    width: 8em;
-    height: 8em;
-  }
-
-  .hotels-example-panel {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .hide-responsive {
-    display: none;
+  #hotels-examples {
+    height: auto;
+    padding: 3em;
   }
 }
 
@@ -456,3 +549,4 @@ ul.column {
     font-size: 1vw;
   }
 }
+

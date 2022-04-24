@@ -51,47 +51,52 @@
         />
       </symbol>
     </svg>
-    <div class="web-site-layout">
-      <div class="hero-background"></div>
+    <section id="hero-section">
       <header>
         <svg class="logo">
           <use href="#logo" />
         </svg>
         <div class="header-right-elements">
           <nav>
-            <span><a class="header-link" href="#">Stays</a></span>
-            <span><a class="header-link" href="#">Attractions</a></span>
+            <ul>
+              <li><a class="header-link" href="#">Stays</a></li>
+              <li><a class="header-link" href="#">Attractions</a></li>
+            </ul>
           </nav>
           <div class="icons-control">
-            <svg class="theme-switcher">
+            <svg class="theme-switcher btn-icon">
               <use href="#night-icon" />
             </svg>
-            <svg class="account">
+            <svg class="account btn-icon">
               <use href="#account-icon" />
             </svg>
           </div>
         </div>
       </header>
-      <section>
-        <h1>
-          Discover stays <br />
-          to live, work or just relax
-        </h1>
+      <h1>
+        Discover stays <br />
+        to live, work or just relax
+      </h1>
+      <form id="booking-search-form">
         <div class="booking-input-labels">
           <div class="hotel-name-input-label">
-            Your destination or hotel name
+            <label for="hotel-name-input">Your destination or hotel name</label>
           </div>
-          <div class="dates-input-label">Check-in — Check-out</div>
+          <div class="dates-input-label">
+            <label for="dates-input">Check-in — Check-out</label>
+          </div>
         </div>
         <div class="hero-booking-grid">
           <input
             class="hero-booking-input"
+            id="hotel-name-input"
             type="text"
             placeholder="New York"
           />
           <input
             class="hero-booking-input"
             type="date"
+            id="dates-input"
             placeholder="Tue 15 Sept — Sat 19 Sept"
           />
           <input
@@ -99,93 +104,106 @@
             type="text"
             placeholder="2 Adults — 0 Children — 1 Room"
           />
-          <div>
-            <button class="header-button">Search</button>
-          </div>
+          <button class="primary-button">Search</button>
         </div>
-        <div class="badges-flex-container">
-          <div class="badges">
-            <a class="google-apple-badge" href="#"
-              ><img
-                class="google-play"
-                src="./images/google_play_badge.svg"
-                alt="google play store badge"
-            /></a>
-            <a class="google-apple-badge" href="#"
-              ><img
-                class="apple-store"
-                src="./images/apple_store_badge.svg"
-                alt="apple store badge"
-            /></a>
-          </div>
+      </form>
+      <div class="badges-container">
+        <div class="badges">
+          <a class="appsstore-badge" href="#">
+            <img
+              id="google-play-badge"
+              src="./images/google_play_badge.svg"
+              alt="google play store badge"
+            />
+          </a>
+          <a class="appsstore-badge" href="#">
+            <img
+              id="apple-store-badge"
+              src="./images/apple_store_badge.svg"
+              alt="apple store badge"
+            />
+          </a>
         </div>
-      </section>
-    </div>
-    <div class="what-do-we-offer">
-      <div class="heading_line">
-        <h2 class="heading">What do we offer</h2>
-        <hr class="line" />
       </div>
-      <div class="images">
-        <div class="icon col-3">
+    </section>
+    <section id="advantages-section">
+      <h2 class="underlined">What do we offer</h2>
+      <div class="advantages">
+        <div class="advantage">
           <img
-            class="img_icon"
+            class="advantage-img-icon"
             src="./images/headset_mic_outlined.svg"
             alt="headset_mic_outlined"
           />
-          <span class="text">Support 24/7</span>
+          <span class="advantage-name">Support 27/7</span>
         </div>
-        <div class="icon col-3">
+        <div class="advantage">
           <img
-            class="img_icon"
+            class="advantage-img-icon"
             src="./images/forum_outlined.svg"
             alt="forum_outlined"
           />
-          <span class="text">Communicate directly</span>
+          <span class="advantage-name">Communicate directly</span>
         </div>
-        <div class="icon col-3">
+        <div class="advantage">
           <img
-            class="img_icon devices"
+            class="advantage-img-icon devices"
             src="./images/devices_outlined.svg"
             alt="devices_outlined"
           />
-          <span class="text">Book online</span>
+          <span class="advantage-name">Book online</span>
         </div>
-        <div class="icon col-3">
+        <div class="advantage">
           <img
-            class="img_icon"
+            class="advantage-img-icon"
             src="./images/thumb_up_alt_outlined.svg"
             alt="thumb_up_alt_outlined"
           />
-          <span class="text">Real guest reviews</span>
+          <span class="advantage-name">Real guest reviews</span>
         </div>
       </div>
-    </div>
-    <section class="homes-guests-loves">
-      <h2 class="title-of-the-homes-block">Homes guests loves</h2>
-      <div class="hotels-example-panel">
-        <div class="hotel-example-card col-3">
-          <img class="hotel-card-responsive" src="./images/hotel_leopold.svg" alt="hotel leopold" />
-          <span class="hotels-name">Hotel Leopold</span>
-          <span class="hotels-location">Saint Petersburg, Russia</span>
-        </div>
-        <div class="hotel-example-card col-3">
-          <img class="hotel-card-responsive" src="./images/apartment_sunshine.svg" alt="apartment sunshine" />
-          <span class="hotels-name">Apartment Sunshine</span>
-          <span class="hotels-location">Santa Cruz de Tenerife, Spain</span>
-        </div>
-        <div class="hotel-example-card col-3 hide-responsive">
-          <img src="./images/villa_kunerad.svg" alt="villa kunerad" />
-          <span class="hotels-name">Villa Kunerad</span>
-          <span class="hotels-location">Vysokie Tatry, Slowakia</span>
-        </div>
-        <div class="hotel-example-card col-3 hide-responsive">
-          <div class="carousel-container">
-            <img src="./images/hostel_frienship.svg" alt="hostel friendship" />
-            <button class="carousel-arrow"></button>
+    </section>
+    <section id="hotels-examples">
+      <h2>Homes guests loves</h2>
+      <div id="hotels-example-panel">
+        <div id="hotels-imgs-names">
+          <div class="hotel-img-name">
+            <div class="rel-container">
+              <img src="./images/hotel_leopold.svg" alt="Hotel Leopold" />
+              <button class="carousel-arrow xs-show"></button>
+            </div>
+            <p>Hotel Leopold</p>
           </div>
-          <span class="hotels-name">Hostel Friendship</span>
-          <span class="hotels-location">Berlin, Germany</span>
+          <div class="hotel-img-name xs-hide">
+            <div class="rel-container">
+              <img
+                src="./images/apartment_sunshine.svg"
+                alt="apartment sunshine"
+              />
+              <button class="carousel-arrow s-show"></button>
+            </div>
+            <p>Apartment Sunshine</p>
+          </div>
+          <div class="hotel-img-name s-hide">
+            <img src="./images/villa_kunerad.svg" alt="Villa Kunerad" />
+            <p>Villa Kunerad</p>
+          </div>
+          <div class="hotel-img-name s-hide">
+            <div class="rel-container">
+              <img
+                src="./images/hostel_frienship.svg"
+                alt="Hostel Friendship"
+              />
+              <button class="carousel-arrow s-hide"></button>
+            </div>
+            <p>Hostel Friendship</p>
+          </div>
+        </div>
+        <div id="hotels-locations">
+          <p class="hotel-location">Saint Petersburg, Russia</p>
+          <p class="hotel-location xs-hide">Santa Cruz de Tenerife, Spain</p>
+          <p class="hotel-location s-hide">Vysokie Tatry, Slowakia</p>
+          <p class="hotel-location s-hide">Berlin, Germany</p>
         </div>
       </div>
     </section>
