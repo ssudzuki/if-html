@@ -51,7 +51,8 @@
         />
       </symbol>
     </svg>
-    <section id="hero-section">
+    <section class="hero-section">
+      <div class="container">
       <header>
         <svg class="logo">
           <use href="#logo" />
@@ -77,7 +78,7 @@
         Discover stays <br />
         to live, work or just relax
       </h1>
-      <form id="booking-search-form">
+      <form class="booking-search-form">
         <div class="booking-input-labels">
           <div class="hotel-name-input-label">
             <label for="hotel-name-input">Your destination or hotel name</label>
@@ -125,8 +126,10 @@
           </a>
         </div>
       </div>
+      </div>
     </section>
-    <section id="advantages-section">
+    <div class="container">
+    <section class="advantages-section">
       <h2 class="underlined">What do we offer</h2>
       <div class="advantages">
         <div class="advantage">
@@ -163,18 +166,21 @@
         </div>
       </div>
     </section>
-    <section id="hotels-examples">
+    </div>
+    <section class="hotels-examples">
+      <div class="container">
       <h2>Homes guests loves</h2>
-      <div id="hotels-example-panel">
-        <div id="hotels-imgs-names">
-          <div class="hotel-img-name">
+      <div class="hotels-example-panel">
+        <div class="hotels-imgs-names">
+          <div>
             <div class="rel-container">
               <img src="./images/hotel_leopold.svg" alt="Hotel Leopold" />
               <button class="carousel-arrow xs-show"></button>
             </div>
-            <p>Hotel Leopold</p>
+            <p class="hotel-name">Hotel Leopold</p>
+            <p class="hotel-location">Saint Petersburg, Russia</p>
           </div>
-          <div class="hotel-img-name xs-hide">
+          <div class="xs-hide">
             <div class="rel-container">
               <img
                 src="./images/apartment_sunshine.svg"
@@ -182,13 +188,15 @@
               />
               <button class="carousel-arrow s-show"></button>
             </div>
-            <p>Apartment Sunshine</p>
+            <p class="hotel-name">Apartment Sunshine</p>
+            <p class="hotel-location xs-hide">Santa Cruz de Tenerife, Spain</p>
           </div>
-          <div class="hotel-img-name s-hide">
+          <div class="s-hide">
             <img src="./images/villa_kunerad.svg" alt="Villa Kunerad" />
-            <p>Villa Kunerad</p>
+            <p class="hotel-name">Villa Kunerad</p>
+            <p class="hotel-location s-hide">Vysokie Tatry, Slowakia</p>
           </div>
-          <div class="hotel-img-name s-hide">
+          <div class="s-hide">
             <div class="rel-container">
               <img
                 src="./images/hostel_frienship.svg"
@@ -196,24 +204,23 @@
               />
               <button class="carousel-arrow s-hide"></button>
             </div>
-            <p>Hostel Friendship</p>
+            <p class="hotel-name">Hostel Friendship</p>
+            <p class="hotel-location s-hide">Berlin, Germany</p>
           </div>
         </div>
-        <div id="hotels-locations">
-          <p class="hotel-location">Saint Petersburg, Russia</p>
-          <p class="hotel-location xs-hide">Santa Cruz de Tenerife, Spain</p>
-          <p class="hotel-location s-hide">Vysokie Tatry, Slowakia</p>
-          <p class="hotel-location s-hide">Berlin, Germany</p>
-        </div>
+      </div>
       </div>
     </section>
     <footer class="footer">
+      <div class="container">
+        <div class="footer-logo-container">
       <img
         class="footer-logo"
         src="./images/logo_responsive.svg"
         alt="responsive logo"
       />
-      <div class="container column">
+        </div>
+      <div class="container-f column">
         <div class="column">
           <a class="footer-link" href="#"
             ><h3 class="column-title">About</h3></a
@@ -257,6 +264,7 @@
         </div>
       </div>
       <div id="copyright">&copy; 2020 Triphouse, Inc. All rights reserved</div>
+    </div>
     </footer>
   </body>
 </html>
