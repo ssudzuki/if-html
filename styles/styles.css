@@ -20,7 +20,13 @@
 .container {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 0 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.container, header{
+  padding-top: 1em;
+  padding-bottom: 0;
 }
 
 input {
@@ -50,7 +56,6 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 3em 0;
 }
 
 .logo {
@@ -471,7 +476,7 @@ button.carousel-arrow:active {
   width: 100%;
   background-color: #10367c;
   color: #ffff;
-  padding: 120px 0 120px 0;
+  padding: 3em 0 3em 0;
   font-size: 1.5em;
 }
 
