@@ -17,16 +17,16 @@
   height: 0;
 }
 
+.container-header{
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 1.5em ;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1440px;
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
-
-.container, header{
-  padding-top: 1em;
-  padding-bottom: 0;
+  padding: 7.5em 3em 7.5em 3em;
 }
 
 input {
@@ -214,9 +214,6 @@ nav li:not(:last-child),
   margin-right: 1.5em;
 }
 
-.advantages-section {
-  margin-bottom: 7.3em;
-}
 
 h2 {
   font-size: 2.5em;
@@ -225,7 +222,6 @@ h2 {
 }
 
 .advantages-section h2 {
-  margin-top: 3em;
   color: #383838;
 }
 
@@ -259,7 +255,7 @@ h2 {
 }
 
 .advantage-img-icon {
-  margin-bottom: 50px;
+  margin-bottom: 3em;
   height: 5em;
   width: auto;
 }
@@ -271,7 +267,7 @@ h2 {
 @media (max-width: 960px) {
   .advantages-section h2 {
     font-size: 2.5em;
-    margin-top: 24px;
+    margin-top: 1.5em;
   }
 
   .advantages img {
@@ -301,7 +297,7 @@ h2 {
 .hotels-examples {
   background-color: #eaf0f9;
   width: 100%;
-  padding-bottom: 7.3em;
+
 }
 
 .hotels-examples h2 {
@@ -309,7 +305,7 @@ h2 {
   color: #383838;
   font-weight: 600;
   text-align: center;
-  padding: 3em 0 2.5em 0;
+  padding-bottom: 2.5em;
 }
 
 .hotels-example-panel {
@@ -476,7 +472,6 @@ button.carousel-arrow:active {
   width: 100%;
   background-color: #10367c;
   color: #ffff;
-  padding: 3em 0 3em 0;
   font-size: 1.5em;
 }
 
