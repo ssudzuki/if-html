@@ -20,13 +20,13 @@
 .container-header{
   margin: 0 auto;
   max-width: 1440px;
-  padding: 1.5em ;
+  padding: 50px ;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 7.5em 3em 7.5em 3em;
+  padding: 120px 104px 120px 104px;
 }
 
 input {
@@ -301,15 +301,15 @@ h2 {
 }
 
 .hotels-examples h2 {
-  font-size: 2.5em;
+  font-size: 40px;
   color: #383838;
   font-weight: 600;
   text-align: center;
-  padding-bottom: 2.5em;
+  padding-bottom: 100px;
 }
 
 .hotels-example-panel {
-  font-size: 1.5em;
+  font-size: 24px;
 }
 
 .hotels-imgs-names img {
@@ -324,17 +324,17 @@ h2 {
 .hotels-imgs-names > *,
 .hotels-locations > * {
   width: 25%;
-  padding-right: 1.5em;
+  padding-right: 16px;
 }
 
 .hotel-name {
   color: #3077c6;
-  margin-top: 1.5em;
+  margin-top: 24px;
 }
 
 .hotel-location {
   color: #bfbfbf;
-  margin-top: 1.3em;
+  margin-top: 24px;
 }
 
 .s-show,
@@ -417,7 +417,7 @@ button.carousel-arrow:active {
   }
 
   .hotels-example-panel {
-    font-size: 2em;
+    font-size: 20px;
   }
 
   .resp-hotel-card {
@@ -449,7 +449,6 @@ button.carousel-arrow:active {
 
   .hotels-examples {
     height: auto;
-    padding: 3em;
   }
 }
 
@@ -472,7 +471,7 @@ button.carousel-arrow:active {
   width: 100%;
   background-color: #10367c;
   color: #ffff;
-  font-size: 1.5em;
+  font-size: 20px;
 }
 
 .container-f > .column {
@@ -489,7 +488,7 @@ ul.column {
 }
 
 .column > li {
-  margin-bottom: 1em;
+  margin-bottom: 24px;
 }
 
 .column-title {
@@ -512,11 +511,11 @@ ul.column {
 }
 
 .column-title {
-  padding-bottom: 1em;
+  padding-bottom: 16px;
 }
 
 #copyright {
-  margin-top: 4em;
+  margin-top: 64px;
 }
 
 .footer-logo {
@@ -526,7 +525,7 @@ ul.column {
 
 @media (max-width: 900px) {
   body {
-    font-size: 1em;
+    font-size: 15px;
   }
 
   .column-list {
@@ -541,7 +540,7 @@ ul.column {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2em 0;
+    padding: 30px 0;
     font-size: 15px;
   }
 
@@ -557,11 +556,11 @@ ul.column {
 
   .footer-logo {
     display: block;
-    margin: 3em;
+    margin: 40px;
   }
 
   #copyright {
     text-align: center;
-    margin-top: 1.8em;
+    margin-top: 30px;
   }
 }
