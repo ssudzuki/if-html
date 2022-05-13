@@ -51,162 +51,222 @@
         />
       </symbol>
     </svg>
-    <div class="web-site-layout">
-      <div class="hero-background"></div>
-      <header>
-        <svg class="logo">
-          <use href="#logo" />
-        </svg>
-        <div class="header-right-elements">
-          <div class="nav-header">
-            <span><a class="header-link" href="#">Stays</a></span>
-            <span><a class="header-link" href="#">Attractions</a></span>
+    <section class="hero-section">
+      <div class="container-header">
+        <header>
+          <svg class="logo">
+            <use href="#logo" />
+          </svg>
+          <div class="header-right-elements">
+            <nav>
+              <ul>
+                <li><a class="header-link" href="#">Stays</a></li>
+                <li><a class="header-link" href="#">Attractions</a></li>
+              </ul>
+            </nav>
+            <div class="icons-control">
+              <svg class="theme-switcher btn-icon">
+                <use href="#night-icon" />
+              </svg>
+              <svg class="account btn-icon">
+                <use href="#account-icon" />
+              </svg>
+            </div>
           </div>
-          <div class="icons-control">
-            <svg class="theme-switcher">
-              <use href="#night-icon" />
-            </svg>
-            <svg class="account">
-              <use href="#account-icon" />
-            </svg>
-          </div>
-        </div>
-      </header>
-      <section>
+        </header>
         <h1>
           Discover stays <br />
           to live, work or just relax
         </h1>
-        <div class="booking-input-labels">
-          <div class="hotel-name-input-label">
-            Your destination or hotel name
+        <form class="booking-search-form">
+          <div class="booking-input-labels">
+            <div class="hotel-name-input-label">
+              <label for="hotel-name-input"
+                >Your destination or hotel name</label
+              >
+            </div>
+            <div class="dates-input-label">
+              <label for="dates-input">Check-in — Check-out</label>
+            </div>
           </div>
-          <div class="dates-input-label">Check-in — Check-out</div>
-        </div>
-        <div class="hero-booking-grid">
-          <input
-            class="hero-booking-input"
-            type="text"
-            placeholder="New York"
-          />
-          <input
-            class="hero-booking-input"
-            type="date"
-            placeholder="Tue 15 Sept — Sat 19 Sept"
-          />
-          <input
-            class="hero-booking-input"
-            type="text"
-            placeholder="2 Adults — 0 Children — 1 Room"
-          />
-          <div>
-            <button class="header-button">Search</button>
+          <div class="hero-booking-grid">
+            <input
+              class="hero-booking-input"
+              id="hotel-name-input"
+              type="text"
+              placeholder="New York"
+            />
+            <input
+              class="hero-booking-input"
+              type="date"
+              id="dates-input"
+              placeholder="Tue 15 Sept — Sat 19 Sept"
+            />
+            <input
+              class="hero-booking-input"
+              type="text"
+              placeholder="2 Adults — 0 Children — 1 Room"
+            />
+            <button class="primary-button">Search</button>
           </div>
-        </div>
-        <div class="badges-flex-container">
+        </form>
+        <div class="badges-container">
           <div class="badges">
-            <a class="google-apple-badge" href="#"
-              ><img
-                class="google-play"
+            <a class="appsstore-badge" href="#">
+              <img
+                id="google-play-badge"
                 src="./images/google_play_badge.svg"
                 alt="google play store badge"
-            /></a>
-            <a class="google-apple-badge" href="#"
-              ><img
-                class="apple-store"
+              />
+            </a>
+            <a class="appsstore-badge" href="#">
+              <img
+                id="apple-store-badge"
                 src="./images/apple_store_badge.svg"
                 alt="apple store badge"
-            /></a>
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="advantages-section">
+        <h2 class="underlined">What do we offer</h2>
+        <div class="advantages">
+          <div class="advantage">
+            <img
+              class="advantage-img-icon"
+              src="./images/headset_mic_outlined.svg"
+              alt="headset_mic_outlined"
+            />
+            <span class="advantage-name">Support 27/7</span>
+          </div>
+          <div class="advantage">
+            <img
+              class="advantage-img-icon"
+              src="./images/forum_outlined.svg"
+              alt="forum_outlined"
+            />
+            <span class="advantage-name">Communicate directly</span>
+          </div>
+          <div class="advantage">
+            <img
+              class="advantage-img-icon devices"
+              src="./images/devices_outlined.svg"
+              alt="devices_outlined"
+            />
+            <span class="advantage-name">Book online</span>
+          </div>
+          <div class="advantage">
+            <img
+              class="advantage-img-icon"
+              src="./images/thumb_up_alt_outlined.svg"
+              alt="thumb_up_alt_outlined"
+            />
+            <span class="advantage-name">Real guest reviews</span>
           </div>
         </div>
       </section>
     </div>
-    <div class="what-do-we-offer">
-      <div class="heading_line">
-        <h2 class="heading">What do we offer</h2>
-        <hr class="line" />
+    <section class="hotels-examples">
+      <div class="container">
+        <h2>Homes guests loves</h2>
+        <div class="hotels-example-panel hotels-imgs-names">
+          <div class="resp-hotel-card">
+            <div class="rel-container">
+              <img src="./images/hotel_leopold.svg" alt="Hotel Leopold" />
+              <button class="carousel-arrow xs-show"></button>
+            </div>
+            <p class="hotel-name">Hotel Leopold</p>
+            <p class="hotel-location">Saint Petersburg, Russia</p>
+          </div>
+          <div class="xs-hide">
+            <div class="rel-container">
+              <img
+                src="./images/apartment_sunshine.svg"
+                alt="apartment sunshine"
+              />
+              <button class="carousel-arrow s-show"></button>
+            </div>
+            <p class="hotel-name">Apartment Sunshine</p>
+            <p class="hotel-location xs-hide">Santa Cruz de Tenerife, Spain</p>
+          </div>
+          <div class="s-hide">
+            <img src="./images/villa_kunerad.svg" alt="Villa Kunerad" />
+            <p class="hotel-name">Villa Kunerad</p>
+            <p class="hotel-location s-hide">Vysokie Tatry, Slowakia</p>
+          </div>
+          <div class="s-hide">
+            <div class="rel-container">
+              <img
+                src="./images/hostel_frienship.svg"
+                alt="Hostel Friendship"
+              />
+              <button class="carousel-arrow s-hide"></button>
+            </div>
+            <p class="hotel-name">Hostel Friendship</p>
+            <p class="hotel-location s-hide">Berlin, Germany</p>
+          </div>
+        </div>
       </div>
-      <div class="images">
-        <div class="icon">
-          <img
-            class="img_icon"
-            src="./images/headset_mic_outlined.svg"
-            alt="headset_mic_outlined"
-          />
-          <span class="text">Support 27/7</span>
-        </div>
-        <div class="icon">
-          <img
-            class="img_icon"
-            src="./images/forum_outlined.svg"
-            alt="forum_outlined"
-          />
-          <span class="text">Communicate directly</span>
-        </div>
-        <div class="icon">
-          <img
-            class="img_icon devices"
-            src="./images/devices_outlined.svg"
-            alt="devices_outlined"
-          />
-          <span class="text">Book online</span>
-        </div>
-        <div class="icon">
-          <img
-            class="img_icon"
-            src="./images/thumb_up_alt_outlined.svg"
-            alt="thumb_up_alt_outlined"
-          />
-          <span class="text">Real guest reviews</span>
-        </div>
-      </div>
-    </div>
+    </section>
     <footer class="footer">
-      <img class="footer-logo" src="./images/logo_responsive.svg" alt="responsive logo">
-      <div class="container column">
-        <div class="column">
-          <a class="footer-link" href="#"
-            ><h3 class="column-title">About</h3></a
-          >
-          <div class="column-list">
-            <ul class="column">
-              <li><a class="footer-link" href="#">How Triphouse works</a></li>
-              <li><a class="footer-link" href="#">Careers</a></li>
-              <li><a class="footer-link" href="#">Privacy</a></li>
-              <li><a class="footer-link" href="#">Terms</a></li>
-            </ul>
+      <div class="container">
+        <div class="footer-logo-container">
+          <img
+            class="footer-logo"
+            src="./images/logo_responsive.svg"
+            alt="responsive logo"
+          />
+        </div>
+        <div class="container-f column">
+          <div class="column">
+            <a class="footer-link" href="#"
+              ><h3 class="column-title">About</h3></a
+            >
+            <div class="column-list">
+              <ul class="column">
+                <li><a class="footer-link" href="#">How Triphouse works</a></li>
+                <li><a class="footer-link" href="#">Careers</a></li>
+                <li><a class="footer-link" href="#">Privacy</a></li>
+                <li><a class="footer-link" href="#">Terms</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <a class="footer-link" href="#"
+              ><h3 class="column-title">Property types</h3></a
+            >
+            <div class="column-list">
+              <ul class="column">
+                <li><a class="footer-link" href="#">Guest houses</a></li>
+                <li><a class="footer-link" href="#">Hotels</a></li>
+                <li><a class="footer-link" href="#">Apartments</a></li>
+                <li><a class="footer-link" href="#">Villas</a></li>
+                <li><a class="footer-link" href="#">Holiday homes</a></li>
+                <li><a class="footer-link" href="#">Hostels</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <a class="footer-link" href="#"
+              ><h3 class="column-title title-resp">Support</h3></a
+            >
+            <div class="column-list">
+              <ul class="column">
+                <li>
+                  <a class="footer-link" href="#">Contact Customer Service</a>
+                </li>
+                <li><a class="footer-link" href="#">FAQ</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="column">
-          <a class="footer-link" href="#"
-            ><h3 class="column-title">Property types</h3></a
-          >
-          <div class="column-list">
-            <ul class="column">
-              <li><a class="footer-link" href="#">Guest houses</a></li>
-              <li><a class="footer-link" href="#">Hotels</a></li>
-              <li><a class="footer-link" href="#">Apartments</a></li>
-              <li><a class="footer-link" href="#">Villas</a></li>
-              <li><a class="footer-link" href="#">Holiday homes</a></li>
-              <li><a class="footer-link" href="#">Hostels</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="column">
-          <a class="footer-link" href="#"
-            ><h3 class="column-title">Support</h3></a
-          >
-          <div class="column-list">
-            <ul class="column">
-              <li>
-                <a class="footer-link" href="#">Contact Customer Service</a>
-              </li>
-              <li><a class="footer-link" href="#">FAQ</a></li>
-            </ul>
-          </div>
+        <div id="copyright">
+          &copy; 2020 Triphouse, Inc. All rights reserved
         </div>
       </div>
-      <div id="copyright">&copy; 2020 Triphouse, Inc. All rights reserved</div>
     </footer>
   </body>
 </html>
