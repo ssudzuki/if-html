@@ -342,6 +342,7 @@ h2 {
 
 .rel-container {
   position: relative;
+  width: 100%;
 }
 
 .carousel-arrow {
@@ -353,7 +354,7 @@ h2 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.hotels-example-panel .carousel-arrow {
+.hotels-example-panel .carousel-arrow, .destinations-panel .carousel-arrow {
   position: absolute;
   top: 50%;
   right: 0;
@@ -473,6 +474,209 @@ button.carousel-arrow:active {
 
   .resp-hotel-card {
     margin: 0;
+  }
+}
+
+.destinations-section h2 {
+  font-size: 40px;
+  color: #383838;
+  margin-bottom: 104px;
+}
+
+.btn-nav {
+  background-color: #f3f3f4;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.regions-btn,
+.cities-btn,
+.places-btn {
+  font-size: 24px;
+  color: #383838;
+  height: 64px;
+  width: 192px;
+  background: #f3f3f4;
+  border: none;
+  border-radius: 8px;
+}
+
+.places-btn {
+  width: 238px;
+}
+
+.regions-btn:focus,
+.cities-btn:focus,
+.places-btn:focus {
+  background: #3077c6;
+  color: #ffff;
+}
+
+.destinations-panel {
+  display: flex;
+  margin-top: 65px;
+  position: relative;
+  width:100%;
+}
+.destinations-panel>*{
+  flex:1;
+}
+.destinations-panel img{
+  width:100%;
+  aspect-ratio:  1/ 1;
+}
+
+.destinations-item {
+  padding-right: 16px;
+}
+
+.img-filter {
+  position: relative;
+}
+
+.shadow-filter {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 99%;
+  background-color: rgba(56, 56, 56, 0.4);
+}
+
+.img-filter:hover .shadow-filter {
+  display: block;
+}
+
+.destinations-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 128px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #3077c6;
+  color: #3077c6;
+  background-color: #fff;
+  font-size: 18px;
+  display: none;
+}
+
+.destinations-btn:hover {
+  background-color: #3077c6;
+  color: #fff;
+}
+
+.img-filter:hover .destinations-btn {
+  display: block;
+}
+
+.countries-name {
+  font-size: 24px;
+  color: #3077c6;
+  margin-top: 24px;
+}
+
+.arrow-destinations{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.arrow-destinations .carousel-arrow:before{
+  transform: rotate(90deg) translateX(-50%);
+  left: 0;
+}
+
+.sign-up-block {
+  display: flex;
+  position: relative;
+  margin-top: 120px;
+  background-color: #eaf0f9;
+}
+
+.offer {
+  color: #383838;
+  font-size: 24px;
+  padding-top: 50px;
+}
+
+.container-sign-btn{
+  display: block;
+}
+
+.sign-btn {
+  width: 128px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #3077c6;
+  background-color: #ffffff;
+  font-size: 18px;
+  color: #3077c6;
+  margin-top: 20px;
+}
+
+.sign-btn:hover{
+  background-color: #3077c6;
+  color: #fff;
+}
+
+.user-icon {
+  margin: 57px 24px;
+}
+
+.cross-icon{
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  height: 26px;
+  width: 26px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    padding: 40px 17px;
+  }
+  .destinations-section h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .btn-nav{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .regions-btn,
+  .cities-btn,
+  .places-btn{
+    width: 98px;
+    height: 32px;
+    font-size: 19px;
+    margin-right: 16px;
+    background-color: #ffffff;
+    border: 1px solid #F3F3F4;
+    border-radius: 4px;
+  }
+
+  .item-spain-resp{
+    padding-right: 0;
+  }
+
+  .countries-name{
+    text-align: center;
+  }
+
+  .sign-up-block{
+    display: none;
+  }
+}
+
+@media (max-width: 500px){
+  .destinations-item{
+    padding-right: 0;
   }
 }
 
