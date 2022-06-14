@@ -18,6 +18,10 @@
   height: 0;
 }
 
+.col-3{
+  width: 25%;
+}
+
 .container-header {
   margin: 0 auto;
   max-width: 1440px;
@@ -336,45 +340,21 @@ nav li:not(:last-child),
 }
 
 .carousel-arrow {
-  width: 2.7em;
-  height: 2.7em;
-  background-color: #f3f3f4;
   border-radius: 100%;
   position: relative;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
 }
 
 .hotels-example-panel .carousel-arrow {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translate(50%, -50%);
+  transform: translate(50%, -50%) rotate(-90deg);
 }
 
 .carousel-container {
   position: relative;
-}
-
-.carousel-arrow:before {
-  content: "";
-  background: url(../images/arrow.svg) no-repeat center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-button.carousel-arrow {
-  border: none;
-  cursor: pointer;
-}
-
-button.carousel-arrow:active {
-  outline: none;
-  box-sizing: border-box;
-  border: 1px solid;
 }
 
 @media (max-width: 960px) {
@@ -503,17 +483,14 @@ button.carousel-arrow:active {
   width: 100%;
 }
 
-.destinations-panel > * {
-  flex: 1;
-}
-
-.destinations-panel img {
+.destinations-img {
   width: 100%;
   aspect-ratio: 1/ 1;
 }
 
 .destinations-item {
   padding-right: 16px;
+  width: 30%;
 }
 
 .img-filter {
@@ -572,31 +549,19 @@ button.carousel-arrow:active {
 .carousel-arrow-down {
   width: 2.7em;
   height: 2.7em;
-  background-color: #f3f3f4;
   border-radius: 100%;
-  position: relative;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.carousel-arrow-down:before {
-  transform: rotate(90deg) translateX(-50%);
-  left: 0;
-  content: "";
-  background: url(../images/arrow.svg) no-repeat center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-arrow-down:active {
-  box-sizing: border-box;
-  border: 1px solid;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto 120px;
+  transform: rotate(0deg);
 }
 
 .sign-up-block {
   display: flex;
   position: relative;
-  margin-top: 120px;
   background-color: #eaf0f9;
 }
 
@@ -668,9 +633,15 @@ button.carousel-arrow:active {
     border-radius: 4px;
   }
 
-  .item-spain-resp {
-    padding-right: 0;
+  .destinations-item{
+    padding-right: 16px;
+    width: 100%;
   }
+
+  .carousel-arrow-down{
+    display: none;
+  }
+
 
   .destinations-btn {
     padding: 13px 20px;

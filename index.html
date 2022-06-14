@@ -173,10 +173,12 @@
       <div class="container">
         <h2 class="title-of-block">Homes guests loves</h2>
         <div class="hotels-example-panel hotels-imgs-names">
-          <div class="resp-hotel-card">
+          <div class="resp-hotel-card col-3">
             <div class="rel-container">
               <img src="./images/hotel_leopold.svg" alt="Hotel Leopold" />
-              <button class="carousel-arrow xs-show"></button>
+              <div class="carousel-arrow xs-show">
+                <img src="./images/arrow.svg" alt="arrow" />
+              </div>
             </div>
             <p class="hotel-name">Hotel Leopold</p>
             <p class="hotel-location">Saint Petersburg, Russia</p>
@@ -187,7 +189,9 @@
                 src="./images/apartment_sunshine.svg"
                 alt="apartment sunshine"
               />
-              <button class="carousel-arrow s-show"></button>
+              <div class="carousel-arrow s-show">
+                <img src="./images/arrow.svg" alt="arrow" />
+              </div>
             </div>
             <p class="hotel-name">Apartment Sunshine</p>
             <p class="hotel-location xs-hide">Santa Cruz de Tenerife, Spain</p>
@@ -203,7 +207,9 @@
                 src="./images/hostel_frienship.svg"
                 alt="Hostel Friendship"
               />
-              <button class="carousel-arrow s-hide"></button>
+              <div class="carousel-arrow s-hide">
+                <img src="./images/arrow.svg" alt="arrow" />
+              </div>
             </div>
             <p class="hotel-name">Hostel Friendship</p>
             <p class="hotel-location s-hide">Berlin, Germany</p>
@@ -221,49 +227,59 @@
             Places <span class="s-hide">of interest</span>
           </button>
         </div>
+        <div>
         <div class="destinations-panel">
-          <div class="destinations-item carousel-arrow-down">
+          <div class="destinations-item col-3">
             <div class="img-filter">
               <img
-                class="maldives-img"
                 src="./images/Maldives.png"
                 alt="Maldives"
+                class="destinations-img"
               />
-              <button class="xs-show s-hide carousel-arrow-down"></button>
               <div class="shadow-filter"></div>
               <button class="destinations-btn">Book now</button>
             </div>
             <p class="countries-name">Maldives</p>
           </div>
-          <div class="destinations-item xs-hide item-spain-resp">
+          <div class="destinations-item xs-hide col-3">
             <div class="img-filter">
-              <img src="./images/Spain.png" alt="Spain" />
-              <button class="s-show xs-hide carousel-arrow-down"></button>
+              <img
+                class="destinations-img"
+                src="./images/Spain.png"
+                alt="Spain"
+              />
               <div class="shadow-filter"></div>
               <button class="destinations-btn">Book now</button>
             </div>
             <p class="countries-name">Spain</p>
           </div>
-          <div class="destinations-item s-hide">
+          <div class="destinations-item s-hide col-3">
             <div class="img-filter">
-              <img src="./images/Norway.png" alt="Norway" />
+              <img
+                class="destinations-img"
+                src="./images/Norway.png"
+                alt="Norway"
+              />
               <div class="shadow-filter"></div>
               <button class="destinations-btn">Book now</button>
             </div>
             <p class="countries-name">Norway</p>
           </div>
-          <div class="destinations-item s-hide">
+          <div class="destinations-item s-hide col-3">
             <div class="img-filter">
-              <img src="./images/Rectangle%2050.png" alt="Island" />
+              <img
+                class="destinations-img"
+                src="./images/Rectangle%2050.png"
+                alt="Island"
+              />
               <div class="shadow-filter"></div>
               <button class="destinations-btn">Book now</button>
             </div>
             <p class="countries-name">Island</p>
           </div>
         </div>
-        <div class="s-hide">
-          <div class="arrow-destinations">
-            <button class="carousel-arrow-down"></button>
+          <div class="carousel-arrow-down">
+            <img src="./images/arrow.svg" alt="arrow" />
           </div>
         </div>
         <div class="sign-up-block">
