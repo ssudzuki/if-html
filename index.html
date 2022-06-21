@@ -132,7 +132,7 @@
     </section>
     <div class="container">
       <section class="advantages-section">
-        <h2 class="underlined">What do we offer</h2>
+        <h2 class="underlined title-of-block">What do we offer</h2>
         <div class="advantages">
           <div class="advantage">
             <img
@@ -171,12 +171,14 @@
     </div>
     <section class="hotels-examples">
       <div class="container">
-        <h2>Homes guests loves</h2>
+        <h2 class="title-of-block">Homes guests loves</h2>
         <div class="hotels-example-panel hotels-imgs-names">
-          <div class="resp-hotel-card">
+          <div class="resp-hotel-card col-3">
             <div class="rel-container">
               <img src="./images/hotel_leopold.svg" alt="Hotel Leopold" />
-              <button class="carousel-arrow xs-show"></button>
+              <div class="carousel-arrow xs-show">
+                <img src="./images/arrow.svg" alt="arrow" />
+              </div>
             </div>
             <p class="hotel-name">Hotel Leopold</p>
             <p class="hotel-location">Saint Petersburg, Russia</p>
@@ -187,7 +189,9 @@
                 src="./images/apartment_sunshine.svg"
                 alt="apartment sunshine"
               />
-              <button class="carousel-arrow s-show"></button>
+              <div class="carousel-arrow s-show">
+                <img src="./images/arrow.svg" alt="arrow" />
+              </div>
             </div>
             <p class="hotel-name">Apartment Sunshine</p>
             <p class="hotel-location xs-hide">Santa Cruz de Tenerife, Spain</p>
@@ -203,7 +207,9 @@
                 src="./images/hostel_frienship.svg"
                 alt="Hostel Friendship"
               />
-              <button class="carousel-arrow s-hide"></button>
+              <div class="carousel-arrow s-hide">
+                <img src="./images/arrow.svg" alt="arrow" />
+              </div>
             </div>
             <p class="hotel-name">Hostel Friendship</p>
             <p class="hotel-location s-hide">Berlin, Germany</p>
@@ -211,6 +217,91 @@
         </div>
       </div>
     </section>
+    <div class="container">
+      <section class="destinations-section">
+        <h2 class="title-of-block">The best destinations</h2>
+        <div class="btns-nav">
+          <button class="btn-nav">Regions</button>
+          <button class="btn-nav">Cities</button>
+          <button class="btn-nav">
+            Places <span class="s-hide">of interest</span>
+          </button>
+        </div>
+        <div>
+          <div class="destinations-panel">
+            <div class="destinations-item col-3">
+              <div class="img-filter">
+                <div class="rel-container">
+                  <img
+                    src="./images/Maldives.png"
+                    alt="Maldives"
+                    class="destinations-img"
+                  />
+                  <div class="carousel-arrow xs-show">
+                    <img src="./images/arrow.svg" alt="arrow" />
+                  </div>
+                  <div class="shadow-filter"></div>
+                  <button class="destinations-btn">Book now</button>
+                </div>
+              </div>
+              <p class="countries-name">Maldives</p>
+            </div>
+            <div class="destinations-item xs-hide col-3">
+              <div class="img-filter">
+                <div class="rel-container">
+                  <img
+                    class="destinations-img"
+                    src="./images/Spain.png"
+                    alt="Spain"
+                  />
+                  <div class="carousel-arrow s-show">
+                    <img src="./images/arrow.svg" alt="arrow" />
+                  </div>
+                  <div class="shadow-filter"></div>
+                  <button class="destinations-btn">Book now</button>
+                </div>
+              </div>
+              <p class="countries-name">Spain</p>
+            </div>
+            <div class="destinations-item s-hide col-3">
+              <div class="img-filter">
+                <img
+                  class="destinations-img"
+                  src="./images/Norway.png"
+                  alt="Norway"
+                />
+                <div class="shadow-filter"></div>
+                <button class="destinations-btn">Book now</button>
+              </div>
+              <p class="countries-name">Norway</p>
+            </div>
+            <div class="destinations-item s-hide col-3">
+              <div class="img-filter">
+                <img
+                  class="destinations-img"
+                  src="./images/Rectangle%2050.png"
+                  alt="Island"
+                />
+                <div class="shadow-filter"></div>
+                <button class="destinations-btn">Book now</button>
+              </div>
+              <p class="countries-name">Island</p>
+            </div>
+          </div>
+          <div class="carousel-arrow-down">
+            <img src="./images/arrow.svg" alt="arrow" />
+          </div>
+        </div>
+        <div class="sign-up-block">
+          <img class="user-icon" src="./images/user.svg" alt="user" />
+          <img class="cross-icon" src="./images/cross.svg" alt="cross-icon" />
+          <div>
+            <p class="offer">Sign up and get 20% off your first booking</p>
+            <button class="sign-btn">Sign up</button>
+          </div>
+        </div>
+      </section>
+    </div>
     <footer class="footer">
       <div class="container">
         <div class="footer-logo-container">
