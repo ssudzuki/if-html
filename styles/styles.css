@@ -401,7 +401,6 @@ nav li:not(:last-child),
 
   .title-of-block {
     font-size: 28px;
-    margin-top: 40px;
     margin-bottom: 30px;
   }
 
@@ -693,7 +692,7 @@ nav li:not(:last-child),
 
 .review-img {
   display: block;
-  width: 100%;
+  width: 30%;
 }
 
 .feedback-panel .carousel-arrow {
@@ -803,6 +802,11 @@ nav li:not(:last-child),
   margin: 24px 24px 65px 24px;
 }
 
+.app-advertising{
+  display: none;
+}
+
+
 @media (max-width: 960px) {
   .container {
     padding: 40px 17px;
@@ -838,7 +842,7 @@ nav li:not(:last-child),
     display: none;
   }
 
-  .title-of-block{
+  .title-of-block-resp{
     display: none;
   }
 
@@ -866,6 +870,26 @@ nav li:not(:last-child),
     margin-right: 8px;
     border-radius: 8px;
   }
+
+  .app-advertising{
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    left: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 24px 0;
+    color: #383838;
+    font-size: 18px;
+  }
+
+  .inst-app{
+    color: #3077c6;
+    font-size: 20px;
+  }
+
 }
 
 @media (max-width: 1050px) {
